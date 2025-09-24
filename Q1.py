@@ -367,13 +367,10 @@ def test_question1():
     
     solution3 = solve_eight_puzzle(initial3, goal3)
     if solution3:
-        print(f"Solution found in {len(solution3) - 1} moves")
-        print("(Showing first few steps due to length)")
-        for i, state in enumerate(solution3[:min(4, len(solution3))]):
+        print(f"Solution found in {len(solution3) - 1} moves:")
+        for i, state in enumerate(solution3):
             print(f"Step {i}:")
             print_grid(state)
-        if len(solution3) > 4:
-            print(f"... {len(solution3) - 4} more steps to reach goal")
     else:
         print("No solution found")
 
