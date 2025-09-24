@@ -1,13 +1,11 @@
 """
 Homework 1 Solutions
-Authors: [Your Name(s) Here]
-Course: [Course Name]
-Date: [Date]
+Authors: Santiago Defelice and Santiago Rubero
+Course: Algorithm Techniques
+Date: 9/24/2025
 
-This file contains solutions for all three homework questions:
-1. Number of Islands
-2. Shortest Path in a Grid with Obstacle Elimination  
-3. Eight Puzzle Game
+
+
 """
 
 from collections import deque
@@ -20,6 +18,8 @@ from typing import List, Tuple, Optional
 
 def num_islands(grid: List[List[str]]) -> int:
     """
+    Number of Islands
+    
     PROBLEM ANALYSIS:
     This is a classic connected components problem. We need to find all connected
     regions of '1's (land) in the grid. We can use DFS or BFS to explore each
