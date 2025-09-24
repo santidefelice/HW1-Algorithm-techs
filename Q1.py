@@ -307,61 +307,6 @@ def test_question1():
     print(f"Number of islands: {result3}")
     print("Expected: 1")
 
-def test_question2():
-    """Test cases for Shortest Path with Obstacle Elimination"""
-    print("\n" + "=" * 60)
-    print("QUESTION 2: SHORTEST PATH WITH OBSTACLE ELIMINATION - TEST CASES")
-    print("=" * 60)
-    
-    # Test Case 1: Example 1 from problem
-    print("\n--- Test Case 1 ---")
-    grid1 = [
-        [0,0,0],
-        [1,1,0],
-        [0,0,0],
-        [0,1,1],
-        [0,0,0]
-    ]
-    k1 = 1
-    print_grid(grid1, "Input Grid")
-    print(f"k = {k1}")
-    result1 = shortest_path_with_elimination(grid1, k1)
-    print(f"Shortest path length: {result1}")
-    print("Expected: 6")
-    
-    # Test Case 2: Example 2 from problem
-    print("\n--- Test Case 2 ---")
-    grid2 = [
-        [0,1,1],
-        [1,1,1],
-        [1,0,0]
-    ]
-    k2 = 1
-    print_grid(grid2, "Input Grid")
-    print(f"k = {k2}")
-    result2 = shortest_path_with_elimination(grid2, k2)
-    print(f"Shortest path length: {result2}")
-    print("Expected: -1")
-    
-    # Test Case 3: Simple path with no obstacles
-    print("\n--- Test Case 3 ---")
-    grid3 = [
-        [0,0,0],
-        [0,0,0],
-        [0,0,0]
-    ]
-    k3 = 0
-    print_grid(grid3, "Input Grid")
-    print(f"k = {k3}")
-    result3 = shortest_path_with_elimination(grid3, k3)
-    print(f"Shortest path length: {result3}")
-    print("Expected: 4")
-
-def test_question3():
-    """Test cases for Eight Puzzle Game"""
-    print("\n" + "=" * 60)
-    print("QUESTION 3: EIGHT PUZZLE GAME - TEST CASES")
-    print("=" * 60)
     
     # Test Case 1: Simple one-move solution
     print("\n--- Test Case 1 ---")
@@ -434,14 +379,10 @@ def test_question3():
 
 def main():
     """Main function to run all test cases"""
-    print("HOMEWORK 1 - SEARCH ALGORITHMS")
-    print("Student: [Your Name Here]")
     print("=" * 60)
     
     # Run all test cases
     test_question1()
-    test_question2()
-    test_question3()
     
     print("\n" + "=" * 60)
     print("ALL TEST CASES COMPLETED")
