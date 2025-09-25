@@ -106,7 +106,7 @@ def test_question2():
     print(f"k = {k1}")
     result1 = shortest_path_with_elimination(grid1, k1)
     print(f"Shortest path length: {result1}")
-    print("Expected: 6")
+    
     
     # Test Case 2: Example 2 from problem
     print("\n--- Test Case 2 ---")
@@ -120,7 +120,7 @@ def test_question2():
     print(f"k = {k2}")
     result2 = shortest_path_with_elimination(grid2, k2)
     print(f"Shortest path length: {result2}")
-    print("Expected: -1")
+    
     
     # Test Case 3: Simple path with no obstacles
     print("\n--- Test Case 3 ---")
@@ -134,7 +134,7 @@ def test_question2():
     print(f"k = {k3}")
     result3 = shortest_path_with_elimination(grid3, k3)
     print(f"Shortest path length: {result3}")
-    print("Expected: 4")
+    
 
 def main():
     """Main function to run all test cases"""

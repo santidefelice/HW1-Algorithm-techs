@@ -95,7 +95,7 @@ def test_question1():
     print_grid(grid1, "Input Grid")
     result1 = num_islands([row[:] for row in grid1])  # Deep copy to preserve original
     print(f"Number of islands: {result1}")
-    print("Expected: 3")
+    
     
     # Test Case 2: No islands
     print("\n--- Test Case 2 ---")
@@ -107,7 +107,7 @@ def test_question1():
     print_grid(grid2, "Input Grid")
     result2 = num_islands([row[:] for row in grid2])
     print(f"Number of islands: {result2}")
-    print("Expected: 0")
+    
     
     # Test Case 3: One large island
     print("\n--- Test Case 3 ---")
@@ -119,7 +119,7 @@ def test_question1():
     print_grid(grid3, "Input Grid")
     result3 = num_islands([row[:] for row in grid3])
     print(f"Number of islands: {result3}")
-    print("Expected: 1")
+    
     
 
 def main():
