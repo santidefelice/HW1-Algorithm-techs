@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>8-Puzzle Game</h1>
+        
+        <div class="controls">
+            <div class="upload-section">
+                <h3>Upload Image</h3>
+                <input type="file" id="imageUpload" accept="image/*">
+                <button id="useNumbersBtn">Use Numbers Instead</button>
+            </div>
+            
+            <div class="algorithm-section">
+                <h3>Algorithm Options</h3>
+                <select id="algorithmSelect">
+                    <option value="astar">A* (Manhattan Distance)</option>
+                    <option value="astar-misplaced">A* (Misplaced Tiles)</option>
+                    <option value="bfs">BFS (Breadth-First Search)</option>
+                    <option value="dfs">DFS (Depth-First Search)</option>
+                </select>
+            </div>
+            
+            <div class="game-controls">
+                <button id="shuffleBtn">Shuffle Puzzle</button>
+                <button id="solveBtn">Show Solution</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <div class="puzzle-container">
+                <h3>Current Puzzle</h3>
+                <div id="puzzleGrid" class="puzzle-grid"></div>
+                <div class="game-info">
+                    <p>Moves: <span id="moveCount">0</span></p>
+                    <p>Status: <span id="gameStatus">Ready</span></p>
+                </div>
+            </div>
+            
+            <div class="solution-container" id="solutionContainer" style="display: none;">
+                <h3>Solution Steps</h3>
+                <div class="solution-controls">
+                    <button id="prevStepBtn">← Previous</button>
+                    <span id="stepInfo">Step 0 of 0</span>
+                    <button id="nextStepBtn">Next →</button>
+                </div>
+                <div id="solutionGrid" class="puzzle-grid"></div>
+            </div>
+        </div>
+        
+        <div class="algorithm-info">
+            <h3>Algorithm Information</h3>
+            <div id="algorithmStats">
+                <p>Select an algorithm and solve to see statistics</p>
+            </div>
+        </div>
+    </div>
+    
+    <canvas id="imageCanvas" style="display: none;"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
